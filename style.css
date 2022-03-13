@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  
+  gap: 10px;
+  height: 100vh;
+  flex-direction: column;
+  width: 100vw;
+  
+  overflow: hidden;
+  
+  background: rgb(25, 26, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(25, 26, 36, 1) 0%,
+    rgba(64, 61, 66, 1) 29%,
+    rgba(52, 54, 80, 1) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  font-family: "Red Hat Text", sans-serif;
+}
+.num {
+  font-size: 90px;
+  color: hsl(345, 95%, 68%);
+
+  transition: 0.4s;
+}
+.timer {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main {
+  height: 300px;
+  display: flex;
+  border-radius: 10%;
+  
+  box-shadow: 2px 24px 3px -2px rgba(0, 0, 0, 0.75);
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  background-color: hsl(236, 21%, 26%);
+  position: relative;
+  perspective: 700px;
+  overflow: hidden;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  -webkit-box-shadow: 2px 24px 3px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 24px 3px -2px rgba(0, 0, 0, 0.75);
+}
+.top,
+.back_layer {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  top: 0;
+  opacity: 0.5;
+  transform-origin: bottom;
+  z-index: 1;
+  background-color: hsl(235, 16%, 14%);
+  transition: 0.6s;
+  left: 0;
+}
+
+@keyframes flip {
+  10% {
+  }
+  30% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotateX(-180deg);
+  }
+
+  100% {
+    transform: rotateX(-180deg);
+
+    opacity: 0;
+  }
+}
+
+.left {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: hsl(234, 17%, 12%);
+
+  top: calc(50% - 15px);
+  left: -15px;
+}
+.right {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  
+  background-color: hsl(234, 17%, 12%);
+
+  z-index: 100;
+  top: calc(50% - 15px);
+
+  right: -15px;
+}
+input {
+  height: 40px;
+  font-size: 20px;
+  background-color: hsl(235, 16%, 14%);
+  color: hsl(345, 95%, 68%);
+  padding: 10px;
+  width: 180px;
+  border: none;
+}
+input:focus {
+  outline: none !important;
+  border-color: hsl(345, 95%, 68%);
+  box-shadow: 0 0 3px hsl(345, 95%, 68%);
+}
+
+  
+
+button {
+  height: 40px;
+  font-size: 20px;
+  
+  padding: 0;
+  background-color: hsl(235, 16%, 14%);
+  color: white;
+  
+  cursor: pointer;
+  width: 180px;
+  border: none;
+}
+
+.mountain {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -100;
+}
+.add {
+  color: wheat;
+  margin-top: 100px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  font-size: 22px;
+}
+.attribution a {
+  color: wheat;
+  text-decoration: none;
+}
+
+.social {
+  position: fixed;
+  bottom: 20%;
+  gap: 30px;
+  display: flex;
+  
+}
+
+
+@media (max-width: 1115px) {
+  .main {
+    width: 220px;
+  }
+}
+@media (max-width: 950px) {
+  .main {
+    width: 200px;
+  }
+}
+@media (max-width: 870px) {
+  .main {
+    width: 170px;
+  }
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 760px) {
+  body {
+    overflow: auto;
+  }
+  .timer {
+    gap: 30px;
+  }
+  .main {
+    width: 150px;
+  }
+  input,
+  button {
+    width: 120px;
+    margin: 10px;
+  }
+
+  .attribution {
+    font-size: 16px !important;
+    display: none;
+  }
+  .social {
+    position: unset;
+    margin-top: 40px;
+  }
+}
