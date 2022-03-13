@@ -8,7 +8,7 @@
     const minute_div = document.getElementsByClassName('minute_div')
     const num = document.getElementsByClassName('num')
     const hour_div = document.getElementsByClassName('hour_div')
-   // const Day_input = document.getElementById('day_input');
+   const Day_input = document.getElementById('day_input');
     const second_input = document.getElementById('second_input');
     const minute_input = document.getElementById('minute_input');
     const hour_input = document.getElementById('hour_input');
