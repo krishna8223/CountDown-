@@ -49,6 +49,7 @@
         console.log(second,minute,hour);
         setValue(sec,second)
         setValue(min,minute)
+        setValue(hr,hour)
         clearInterval(interval)
         start()
         
