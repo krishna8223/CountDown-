@@ -4,11 +4,11 @@
     const min = document.getElementsByClassName('minute')
     const hr = document.getElementsByClassName('hour')
     const sec = document.getElementsByClassName('sec')
-    const second_div= document.getElementsByClassName('second_div')
-    const minute_div= document.getElementsByClassName('minute_div')
-    const num= document.getElementsByClassName('num')
+    const second_div = document.getElementsByClassName('second_div')
+    const minute_div = document.getElementsByClassName('minute_div')
+    const num = document.getElementsByClassName('num')
     Const hour_div = document.getElementsByClassName('hour_div')
-    const Day_input = document.getElementById('day_input');
+   // const Day_input = document.getElementById('day_input');
     const second_input = document.getElementById('second_input');
     const minute_input = document.getElementById('minute_input');
     const hour_input = document.getElementById('hour_input');
