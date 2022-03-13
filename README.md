@@ -8,8 +8,7 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 ![](./screenshot.jpg)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://krishna8223.github.io/CountDown-/
 
 ### Built with
 
